@@ -1,13 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import { AppWrapper } from './App.css';
+import { GlobalStyle } from '../../styles/globalStyles.css';
 
 class App extends Component {
   render() {
     return (
-      <AppWrapper>
-        <h1>Hello</h1>
-      </AppWrapper>
+      <Fragment>
+        <GlobalStyle />
+        <AppWrapper>
+          <h1>Hello</h1>
+        </AppWrapper>
+      </Fragment>
     );
   }
 }
